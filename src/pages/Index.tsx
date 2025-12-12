@@ -8,6 +8,7 @@ import { BlogSection } from "@/components/BlogSection";
 import { GallerySection } from "@/components/GallerySection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Helmet } from "react-helmet-async";
 
 const Index = () => {
@@ -43,6 +44,7 @@ const Index = () => {
         <GallerySection />
         <ContactSection />
         <Footer />
+        <WhatsAppButton />
       </main>
     </>
   );
