@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, MapPin, Download, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/profile-main.jpg";
+
+// CV download URL - replace with actual CV file path
+const CV_URL = "/Khem_Raj_Ale_Magar_CV.pdf";
+const WHATSAPP_NUMBER = "9779840000000"; // Replace with actual WhatsApp number
+const WHATSAPP_MESSAGE = "Hi Khem, I found your portfolio and would like to connect!";
 
 export const HeroSection = () => {
   return (
@@ -99,6 +104,17 @@ export const HeroSection = () => {
                 asChild
               >
                 <a href="#projects">View Projects</a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-primary/50 hover:bg-primary/10 font-medium"
+                asChild
+              >
+                <a href={CV_URL} download="Khem_Raj_Ale_Magar_CV.pdf">
+                  <Download className="w-4 h-4 mr-2" />
+                  Download CV
+                </a>
               </Button>
             </motion.div>
 
