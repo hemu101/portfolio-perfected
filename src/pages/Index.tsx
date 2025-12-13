@@ -4,8 +4,13 @@ import { AboutSection } from "@/components/AboutSection";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { SkillsSection } from "@/components/SkillsSection";
+import { EducationSection } from "@/components/EducationSection";
 import { BlogSection } from "@/components/BlogSection";
+import { DigitalProductsSection } from "@/components/DigitalProductsSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { ClientsSection } from "@/components/ClientsSection";
 import { GallerySection } from "@/components/GallerySection";
+import { NewsletterSection } from "@/components/NewsletterSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -37,11 +42,16 @@ const Index = () => {
         <Navbar />
         <HeroSection />
         <AboutSection />
+        <ClientsSection />
         <ExperienceSection />
         <ProjectsSection />
         <SkillsSection />
+        <EducationSection />
+        <DigitalProductsSection />
         <BlogSection />
+        <TestimonialsSection />
         <GallerySection />
+        <NewsletterSection />
         <ContactSection />
         <Footer />
         <WhatsAppButton />
