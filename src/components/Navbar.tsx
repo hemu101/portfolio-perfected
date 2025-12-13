@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navLinks = [
   { name: "Home", href: "/#home" },
@@ -11,6 +12,7 @@ const navLinks = [
   { name: "Projects", href: "/#projects" },
   { name: "Blog", href: "/blog" },
   { name: "Gallery", href: "/gallery" },
+  { name: "Docs", href: "/documentation" },
   { name: "Contact", href: "/#contact" },
 ];
 
@@ -50,7 +52,7 @@ export const Navbar = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             {navLinks.map((link, index) => (
               <motion.div
                 key={link.name}
@@ -79,13 +81,14 @@ export const Navbar = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* Right side */}
+          <div className="hidden lg:flex items-center gap-4">
+            <ThemeToggle />
             <Button
               asChild
               className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium"
             >
-              <a href="#contact">
+              <a href="/Khem_Raj_Ale_Magar_CV.pdf" download>
                 <Download className="w-4 h-4 mr-2" />
                 Download CV
               </a>
@@ -93,12 +96,15 @@ export const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-foreground p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="lg:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              className="text-foreground p-2"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -109,25 +115,40 @@ export const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border"
+            className="lg:hidden bg-background/95 backdrop-blur-xl border-b border-border"
           >
             <div className="container-custom py-6 flex flex-col gap-4">
               {navLinks.map((link, index) => (
-                <motion.a
+                <motion.div
                   key={link.name}
-                  href={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-lg font-medium py-2"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.05 }}
-                  onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  {link.name}
-                </motion.a>
+                  {link.href.startsWith("/#") ? (
+                    <a
+                      href={link.href}
+                      className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-lg font-medium py-2 block"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link
+                      to={link.href}
+                      className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-lg font-medium py-2 block"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {link.name}
+                    </Link>
+                  )}
+                </motion.div>
               ))}
-              <Button className="mt-4 w-full bg-primary text-primary-foreground">
-                <Download className="w-4 h-4 mr-2" />
-                Download CV
+              <Button className="mt-4 w-full bg-primary text-primary-foreground" asChild>
+                <a href="/Khem_Raj_Ale_Magar_CV.pdf" download>
+                  <Download className="w-4 h-4 mr-2" />
+                  Download CV
+                </a>
               </Button>
             </div>
           </motion.div>
