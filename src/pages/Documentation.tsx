@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Code2, Palette, Layout, Settings, FileText, ExternalLink, Copy, Check } from "lucide-react";
+import { ArrowLeft, Code2, Palette, Layout, Settings, FileText, Copy, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -193,7 +194,7 @@ const Documentation = () => {
   };
 
   return (
-    <>
+    <PageTransition>
       <Helmet>
         <title>Documentation | Khem Raj Ale Magar Portfolio</title>
         <meta name="description" content="Customization guide and documentation for the portfolio website." />
@@ -335,7 +336,7 @@ const Documentation = () => {
 
         <Footer />
       </main>
-    </>
+    </PageTransition>
   );
 };
 

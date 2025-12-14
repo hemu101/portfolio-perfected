@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Clock, Calendar, User, Share2, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
 import profileImage5 from "@/assets/profile-5.jpg";
 import profileImage6 from "@/assets/profile-6.jpg";
 import profileImage7 from "@/assets/profile-7.jpg";
@@ -124,7 +125,7 @@ const BlogPost = () => {
   }
 
   return (
-    <>
+    <PageTransition>
       <Helmet>
         <title>{post.title} | Khem Raj Ale Magar</title>
         <meta name="description" content={post.excerpt} />
@@ -244,7 +245,7 @@ const BlogPost = () => {
 
         <Footer />
       </main>
-    </>
+    </PageTransition>
   );
 };
 

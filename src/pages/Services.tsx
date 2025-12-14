@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, ArrowRight, Database, Code2, BarChart3, Users, Zap, Shield, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
 
 const services = [
   {
@@ -88,7 +89,7 @@ const services = [
 
 const Services = () => {
   return (
-    <>
+    <PageTransition>
       <Helmet>
         <title>Services | Khem Raj Ale Magar - Data Engineering Solutions</title>
         <meta name="description" content="Professional data engineering services including ETL pipelines, web scraping, lead generation, and process automation by Khem Raj Ale Magar." />
@@ -211,7 +212,7 @@ const Services = () => {
 
         <Footer />
       </main>
-    </>
+    </PageTransition>
   );
 };
 

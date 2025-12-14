@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, Phone, MapPin, Send, Linkedin, Github, ArrowUpRight } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin, Github, ArrowUpRight, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 import profileImage3 from "@/assets/profile-3.jpg";
 
 const contactInfo = [
@@ -48,6 +49,7 @@ export const ContactSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -55,13 +57,32 @@ export const ContactSection = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
-    });
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    setIsLoading(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke("send-contact-email", {
+        body: formData,
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for reaching out. I'll get back to you soon!",
+      });
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error: any) {
+      console.error("Error sending message:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -183,6 +204,7 @@ export const ContactSection = () => {
                       }
                       className="bg-secondary/50 border-border focus:border-primary"
                       required
+                      disabled={isLoading}
                     />
                   </div>
                   <div>
@@ -198,6 +220,7 @@ export const ContactSection = () => {
                       }
                       className="bg-secondary/50 border-border focus:border-primary"
                       required
+                      disabled={isLoading}
                     />
                   </div>
                 </div>
@@ -214,6 +237,7 @@ export const ContactSection = () => {
                     }
                     className="bg-secondary/50 border-border focus:border-primary"
                     required
+                    disabled={isLoading}
                   />
                 </div>
 
@@ -230,6 +254,7 @@ export const ContactSection = () => {
                     }
                     className="bg-secondary/50 border-border focus:border-primary resize-none"
                     required
+                    disabled={isLoading}
                   />
                 </div>
 
@@ -237,9 +262,19 @@ export const ContactSection = () => {
                   type="submit"
                   size="lg"
                   className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-medium"
+                  disabled={isLoading}
                 >
-                  <Send className="w-4 h-4 mr-2" />
-                  Send Message
+                  {isLoading ? (
+                    <>
+                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-4 h-4 mr-2" />
+                      Send Message
+                    </>
+                  )}
                 </Button>
               </div>
             </form>

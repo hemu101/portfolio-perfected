@@ -2,10 +2,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { ArrowLeft, ArrowRight, Clock, Calendar, Search, Filter } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock, Calendar, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
 import profileImage5 from "@/assets/profile-5.jpg";
 import profileImage6 from "@/assets/profile-6.jpg";
 import profileImage7 from "@/assets/profile-7.jpg";
@@ -96,7 +97,7 @@ const Blog = () => {
   const featuredPost = allPosts.find((post) => post.featured);
 
   return (
-    <>
+    <PageTransition>
       <Helmet>
         <title>Blog | Khem Raj Ale Magar - Data Engineering & Automation</title>
         <meta name="description" content="Articles and tutorials about data engineering, web scraping, automation, and technical leadership by Khem Raj Ale Magar." />
@@ -294,7 +295,7 @@ const Blog = () => {
 
         <Footer />
       </main>
-    </>
+    </PageTransition>
   );
 };
 

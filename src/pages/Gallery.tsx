@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
 import profileMain from "@/assets/profile-main.jpg";
 import profile2 from "@/assets/profile-2.jpg";
 import profile3 from "@/assets/profile-3.jpg";
@@ -48,7 +49,7 @@ const Gallery = () => {
   };
 
   return (
-    <>
+    <PageTransition>
       <Helmet>
         <title>Gallery | Khem Raj Ale Magar - Visual Journey</title>
         <meta name="description" content="A visual journey through the professional and personal life of Khem Raj Ale Magar, Data Team Lead." />
@@ -222,7 +223,7 @@ const Gallery = () => {
 
         <Footer />
       </main>
-    </>
+    </PageTransition>
   );
 };
 
