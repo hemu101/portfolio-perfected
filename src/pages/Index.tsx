@@ -14,11 +14,12 @@ import { NewsletterSection } from "@/components/NewsletterSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { PageTransition } from "@/components/PageTransition";
 import { Helmet } from "react-helmet-async";
 
 const Index = () => {
   return (
-    <>
+    <PageTransition>
       <Helmet>
         <title>Khem Raj Ale Magar | Data Team Lead & Technical Expert</title>
         <meta
@@ -56,7 +57,7 @@ const Index = () => {
         <Footer />
         <WhatsAppButton />
       </main>
-    </>
+    </PageTransition>
   );
 };
 
