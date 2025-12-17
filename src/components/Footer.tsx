@@ -144,7 +144,7 @@ export const Footer = () => {
             viewport={{ once: true }}
             className="flex items-center gap-2 text-muted-foreground text-sm"
           >
-            <span>© 2025 Khem Raj Ale Magar. Built with</span>
+            <span>© 2023 Khem Raj Ale Magar</span>
             <Heart className="w-4 h-4 text-red-500 fill-red-500" />
           </motion.div>
 

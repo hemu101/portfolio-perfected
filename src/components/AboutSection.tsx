@@ -8,7 +8,7 @@ const stats = [
   { label: "Years Experience", value: "3+", icon: Briefcase },
   { label: "Projects Completed", value: "15+", icon: Code2 },
   { label: "Teams Led", value: "5+", icon: Users },
-  { label: "Certifications", value: "MCA", icon: GraduationCap },
+  { label: "Certifications", value: "BCA", icon: GraduationCap },
 ];
 
 export const AboutSection = () => {
