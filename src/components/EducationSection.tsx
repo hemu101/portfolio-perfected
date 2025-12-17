@@ -12,6 +12,14 @@ const education = [
     description: "Focused on software development, database management, and information systems. Graduated with distinction.",
     achievements: ["Dean's List", "Best Project Award", "Technical Club President"],
   },
+    {
+    degree: "Bachelor in Information Technology",
+    institution: "Tribhuvan University",
+    location: "Kathmandu, Nepal",
+    period: "2015 - 2019",
+    description: "Focused on software development, database management, and information systems. Graduated with distinction.",
+    achievements: ["Dean's List", "Best Project Award", "Technical Club President"],
+  },
   {
     degree: "Higher Secondary Education",
     institution: "National School of Sciences",
