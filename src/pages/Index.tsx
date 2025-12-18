@@ -21,7 +21,7 @@ const Index = () => {
   return (
     <PageTransition>
       <Helmet>
-        <title>Khem Raj Ale Magar | Data Team Lead & Technical Expert</title>
+       <title>Khem Raj Ale Magar | Data Team Lead & Data Engineering </title>
         <meta
           name="description"
           content="Portfolio of Khem Raj Ale Magar - Data Team Lead specializing in ETL pipelines, web scraping, automation, and leading high-performance data teams."

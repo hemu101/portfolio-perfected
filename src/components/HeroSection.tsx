@@ -48,12 +48,12 @@ export const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight"
+              className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-7 leading-tight"
             >
               Hi, I'm{" "}
-              <span className="gradient-text">Khem Raj</span>
-              <br />
-              Ale Magar
+              <span className="gradient-text">Khem Ale Magar</span>
+              {/* <br /> */}
+              
             </motion.h1>
 
             <motion.p
@@ -71,7 +71,7 @@ export const HeroSection = () => {
               transition={{ delay: 0.5 }}
               className="text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Specialized in ETL pipelines, web scraping, automation, and leading teams to deliver actionable data insights.
+              Specialized in ETL pipelines, web scraping, automation, Database Management, and leading teams to deliver actionable data insights.
             </motion.p>
 
             <motion.div

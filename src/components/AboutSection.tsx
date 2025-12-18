@@ -67,11 +67,13 @@ export const AboutSection = () => {
             </h2>
 
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-              I'm a Data Team Lead with expertise in ETL pipelines, web scraping, automation, and lead generation. Currently leading Data as a Service (DaaS) operations at Veel, serving clients across Nepal and San Francisco.
+               Data Team Lead specializing in building end-to-end data ecosystems that transform information into business advantage. My expertise spans ETL/ELT pipeline architecture for database systems, advanced web scraping infrastructure for market intelligence, and automation of complex data workflows. I lead technical teams in developing analytics platforms that power strategic decision making and product innovation.
+              I establish robust research methodologies, implement data governance processes, and cultivate environments where data-driven insights guide every aspect of organizational development from product optimization to operational excellence.
             </p>
 
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              With a strong foundation in technical support and software implementation, I bridge the gap between complex data systems and business outcomes. I'm passionate about process optimization, team mentorship, and delivering high-quality data solutions.
+              I champion data driven methodologies by establishing research frameworks, implementing data quality processes, and fostering a culture where quantitative insights guide product development and operational excellencebridging technical execution with business strategy to deliver solutions that advance organizational data maturity.
+              With a strong foundation in Database Management, technical support and software implementation, I bridge the gap between complex data systems and business outcomes. I'm passionate about process optimization, team mentorship, and delivering high quality data solutions.
             </p>
 
             {/* Stats Grid */}

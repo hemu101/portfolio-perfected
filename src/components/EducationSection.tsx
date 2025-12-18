@@ -5,7 +5,7 @@ import { GraduationCap, Calendar, MapPin, Award } from "lucide-react";
 
 const education = [
   {
-    degree: "Bachelor in Computer Application",
+    degree: "Master in Computer Application",
     institution: "IGNOU",
     location: "Kathmandu, Nepal",
     period: "2025 - Present",
@@ -22,9 +22,9 @@ const education = [
   },
   {
     degree: "Higher Secondary Education",
-    institution: "Chandrapur, Rautahat, Nepal | HSEB",
-    location: "Kathmandu, Nepal",
-    period: "2013 - 2015",
+    institution: " JanaJyoti College | HSEB",
+    location: "Chandrapur, Rautahat, Nepal",
+    period: "2015 - 2017",
     description: "Specialized in Science and Computer Applications with strong foundation in mathematics and programming.",
     achievements: ["Science Olympiad Finalist", "Computer Science Award"],
   },

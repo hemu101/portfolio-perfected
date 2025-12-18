@@ -18,6 +18,45 @@ const projects = [
     ],
     color: "from-cyan-500/20 to-blue-500/20",
   },
+    {
+    title: "DAAS – Web Data Scraper",
+    description:
+      "Developed a web scraping tool that identifies data patterns, scans HTML structures, and detects repeated elements. Features automatic pagination handling and exports to CSV/XLSX.",
+    icon: Database,
+    tags: ["Python", "Web Scraping", "ETL", "Automation"],
+    highlights: [
+      "CSS selectors for precise extraction",
+      "Rate-limiting avoidance",
+      "Multi-format export support",
+    ],
+    color: "from-cyan-500/20 to-blue-500/20",
+  },
+    {
+    title: "DAAS – Web Data Scraper",
+    description:
+      "Developed a web scraping tool that identifies data patterns, scans HTML structures, and detects repeated elements. Features automatic pagination handling and exports to CSV/XLSX.",
+    icon: Database,
+    tags: ["Python", "Web Scraping", "ETL", "Automation"],
+    highlights: [
+      "CSS selectors for precise extraction",
+      "Rate-limiting avoidance",
+      "Multi-format export support",
+    ],
+    color: "from-cyan-500/20 to-blue-500/20",
+  },
+    {
+    title: "DAAS – Web Data Scraper",
+    description:
+      "Developed a web scraping tool that identifies data patterns, scans HTML structures, and detects repeated elements. Features automatic pagination handling and exports to CSV/XLSX.",
+    icon: Database,
+    tags: ["Python", "Web Scraping", "ETL", "Automation"],
+    highlights: [
+      "CSS selectors for precise extraction",
+      "Rate-limiting avoidance",
+      "Multi-format export support",
+    ],
+    color: "from-cyan-500/20 to-blue-500/20",
+  },
   {
     title: "Web HMS – Hospitality Management",
     description:
