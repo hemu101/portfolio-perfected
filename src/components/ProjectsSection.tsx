@@ -17,6 +17,8 @@ const projects = [
       "Multi-format export support",
     ],
     color: "from-cyan-500/20 to-blue-500/20",
+    githubUrl: "https://github.com/username/daas-scraper", // Placeholder
+    demoUrl: "https://demo.daas-scraper.com", // Placeholder
   },
     {
     title: "IG – Web Data Scraper",
@@ -30,6 +32,8 @@ const projects = [
      "Seamless integration with various data pipelines",
     ],
     color: "from-cyan-500/20 to-green-500/20",
+    githubUrl: "https://github.com/username/ig-scraper", // Placeholder
+    demoUrl: "https://demo.ig-scraper.com", // Placeholder
   },
 {
   title: "TikTok – Data Scraper",
@@ -43,6 +47,8 @@ const projects = [
     "Multi-format dataset export for analytics",
   ],
   color: "from-pink-500/20 to-red-500/20",
+  githubUrl: "https://github.com/username/tiktok-scraper", // Placeholder
+  demoUrl: "https://demo.tiktok-scraper.com", // Placeholder
   },
 {
   title: "ToolHub – AI Multi-Tool Converter",
@@ -56,6 +62,8 @@ const projects = [
     "Batch processing and multi-format export support",
   ],
   color: "from-purple-500/20 to-pink-500/20",
+  githubUrl: "https://github.com/username/toolhub", // Placeholder
+  demoUrl: "https://demo.toolhub.com", // Placeholder
 },
   {
     title: "Web HMS – Hospitality Management",
@@ -69,6 +77,8 @@ const projects = [
       "Integrated POS billing",
     ],
     color: "from-emerald-500/20 to-teal-500/20",
+    githubUrl: "https://github.com/username/web-hms", // Placeholder
+    demoUrl: "https://demo.web-hms.com", // Placeholder
   },
   {
     title: "Lead Generation Pipeline",
@@ -82,6 +92,8 @@ const projects = [
       "Quality validation checks",
     ],
     color: "from-violet-500/20 to-purple-500/20",
+    githubUrl: "https://github.com/username/lead-pipeline", // Placeholder
+    demoUrl: "https://demo.lead-pipeline.com", // Placeholder
   },
 ];
 
@@ -167,21 +179,25 @@ export const ProjectsSection = () => {
 
                   {/* Actions */}
                   <div className="flex gap-3">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="flex-1 border-border hover:bg-secondary"
-                    >
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
+                    <Button asChild variant="outline" size="sm" className="flex-1 border-border hover:bg-secondary">
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 mr-2" />
+                        Code
+                      </a>
                     </Button>
-                    <Button
-                      size="sm"
-                      className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90"
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Demo
-                    </Button>
+                    {project.demoUrl ? (
+                      <Button asChild size="sm" className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90">
+                        <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          Demo
+                        </a>
+                      </Button>
+                    ) : (
+                      <Button size="sm" className="flex-1 bg-muted text-muted-foreground" disabled>
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Demo
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>

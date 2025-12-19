@@ -62,7 +62,7 @@ export const HeroSection = () => {
               transition={{ delay: 0.4 }}
               className="text-xl sm:text-2xl text-muted-foreground mb-4 font-light"
             >
-              Data Team Lead & Technical Expert 🗃️
+              Data Team Lead & IT Enthusiast ⚙️💻📊
             </motion.p>
 
             <motion.p

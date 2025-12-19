@@ -10,15 +10,15 @@ const experiences = [
     location: "Kathmandu, Nepal / San Francisco, CA",
     period: "Feb 2025 – Present",
     description: [
-      "Led Data Team operations including ETL pipelines, data scraping, enrichment, and intent data discovery",
-      "Built automated pipelines to extract and validate structured data across industries",
-      "Managed team workflows, optimized processes, and aligned strategies with business goals",
-      "Implemented data quality checks, deduplication logic, and metadata tracking",
-      "Mentored team members and established best practices for data management",
-      "Collaborated with cross-functional teams to deliver data solutions supporting sales and marketing",
-      "Spearheaded adoption of new data technologies and tools to enhance team capabilities",
-      "Streamlined delivery SLAs using automation, low code platforms, and data visualization tools",
-      "Championed a data-driven culture within the organization to improve decision making",
+       "Led data team operations, managing ETL pipelines and data enrichment",
+       "Built automated pipelines to extract and validate structured data",
+       "Optimized team workflows and aligned strategies with business goals",
+       "Implemented data quality checks, deduplication, and metadata tracking",
+       "Mentored team members and established best data practices",
+       "Collaborated with cross functional teams on data solutions",
+       "Introduced new data tools and technologies to enhance team efficiency",
+       "Streamlined delivery SLAs using automation and data visualization",
+       "Promoted a data-driven culture to improve organizational decision making"
     ],
     current: true,
   },
@@ -32,6 +32,11 @@ const experiences = [
       "Developed automated workflows for system performance monitoring and error detection",
       "Coordinated with Dev, QA, Sales, and Marketing teams for backend fixes",
       "Trained new moderators on AI-assisted content review tools",
+      "Optimized data extraction processes to improve lead quality and accuracy",
+      "Monitored system performance and implemented error detection workflows",
+      "Collaborated with cross functional teams to resolve backend issues",
+      "Provided training on AI tools for content moderation",
+      "Enhanced data extraction methods to boost data quality and accuracy",
     ],
     current: false,
   },
@@ -41,10 +46,17 @@ const experiences = [
     location: "Kathmandu, Nepal",
     period: "Nov 2023 – Apr 2024",
     description: [
-      "Implemented surveillance systems including software installation and network configuration",
+      "Implemented surveillance software and network configuration",
       "Managed SQL Server configurations, query optimization, and backups",
-      "Set up NAS devices for secure video data storage and client access",
       "Conducted training sessions for clients on system usage",
+      "Configured NAS devices to ensure secure and efficient storage solutions",
+      "Delivered client training to enhance system utilization",
+      "Documentation for system configurations and support procedures",
+      "Ensured timely resolution of client-reported issues",
+      "Performed regular system health checks and updates",
+      "Coordinated with vendors for hardware and software support",
+      "Monitored system performance and implemented improvements",
+      "Maintained detailed logs of support activities and resolutions",
     ],
     current: false,
   },
@@ -54,9 +66,16 @@ const experiences = [
     location: "Kathmandu, Nepal",
     period: "Aug 2022 – Oct 2023",
     description: [
-      "Deployed POS, inventory, and billing systems for SMEs",
+      "Deployed and implemented Software systems for SMEs",
       "Managed SQL Server, IIS, AWS backup automation, and IRD eBilling",
       "Provided L2 technical support and collaborated with developers for product improvement",
+      "Scripting, Database Backup Management and optimization",
+      "Customized software features to meet business requirements",
+      "Maintained comprehensive records of support interactions and resolutions",
+      "Ensured compliance with industry standards and regulations",
+      "Assisted in the development of user manuals and Tech documentation",
+      "Implemented feedback mechanisms to improve support services",
+      "Monitored ticketing system to ensure timely resolution of client issues",
     ],
     current: false,
   },
@@ -121,7 +140,7 @@ export const ExperienceSection = () => {
                   whileHover={{ scale: 1.02 }}
                 >
                   {exp.current && (
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-3">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-4">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
                       Current Role
                     </span>

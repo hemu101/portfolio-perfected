@@ -5,36 +5,36 @@ import { Quote, Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Chen",
-    role: "VP of Engineering",
-    company: "TechFlow Inc.",
-    content: "Khem's expertise in data engineering transformed our data infrastructure. His ETL pipelines reduced our processing time by 70% and significantly improved data quality.",
-    rating: 5,
-    avatar: "SC",
-  },
-  {
-    name: "Michael Rodriguez",
+    name: "Dileep Dhakal",
     role: "Founder & CEO",
-    company: "DataDriven Solutions",
-    content: "Working with Khem was exceptional. He built our lead generation system from scratch, and it now captures 10x more qualified leads than before.",
+    company: "Veel Inc.",
+    content: "The web scraping infrastructure Khem developed was highly robust and scalable, handling millions of records seamlessly. His technical depth and reliability make him a strong asset to any data-driven team.",
     rating: 5,
-    avatar: "MR",
+    avatar: "VEEL",
   },
   {
-    name: "Emily Watson",
+    name: "Arjun Basnet",
+    role: "Founder & CEO",
+    company: "Technovision Traders",
+    content: "Working with Khem was exceptional.demonstrated outstanding technical expertise and problem solving skills. He ensured our systems ran smoothly, DB optimization,quickly resolved critical issues, and optimized workflows, significantly improving team efficiency and operational reliability.",
+    rating: 5,
+    avatar: "TVT",
+  },
+  {
+    name: "Nikesh Shrestha",
     role: "Product Manager",
-    company: "SaaS Startup",
-    content: "Khem's automation solutions saved our team hundreds of hours. His attention to detail and problem-solving skills are remarkable.",
+    company: " IMS Software Pvt.Ltd",
+    content: "Khem’s technical expertise and proactive approach greatly improved our systems’ reliability. He efficiently handled database management, AWS,testing, and deployments, saving the team significant time and ensuring smooth operations.",
     rating: 5,
-    avatar: "EW",
+    avatar: "IMS",
   },
   {
-    name: "David Park",
-    role: "Data Science Lead",
-    company: "Analytics Corp",
-    content: "The web scraping infrastructure Khem built is incredibly robust. It handles millions of records without any issues. Highly recommend!",
+    name: "Pepjin Trapman",
+    role: "Chief Operating Officer",
+    company: "ICCO Corporation",
+    content: "The infrastructure Khem built is incredibly robust. His strong attention to detail, structured approach, and problem-solving mindset consistently elevated our delivery standards Highly recommend!",
     rating: 5,
-    avatar: "DP",
+    avatar: "ICCO",
   },
 ];
 
@@ -57,10 +57,10 @@ export const TestimonialsSection = () => {
             Testimonials
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            What Clients <span className="gradient-text">Say</span>
+           Professional Endorsements <span className="gradient-text">Say</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Feedback from clients and colleagues I've had the pleasure of working with.
+            Feedback from managers and senior leaders. I've had the pleasure of working with.
           </p>
         </motion.div>
 

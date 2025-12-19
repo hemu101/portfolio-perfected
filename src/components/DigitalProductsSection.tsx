@@ -7,39 +7,43 @@ import { Button } from "@/components/ui/button";
 const products = [
   {
     title: "ETL Pipeline Templates",
-    description: "Production-ready Python ETL templates with error handling, logging, and monitoring built-in.",
+    description: "Production ready Python ETL templates with error handling, logging, and monitoring built-in.",
     price: "Free",
     rating: 4.9,
-    downloads: "1.2k+",
+    downloads: "1k+",
     type: "Template Pack",
     icon: Package,
+    downloadUrl: "https://example.com/download/etl-templates.zip", // Placeholder URL
   },
   {
     title: "Web Scraping Masterclass",
     description: "Complete guide to ethical web scraping with Python, Selenium, and BeautifulSoup. 50+ pages.",
-    price: "$29",
+    price: "$20",
     rating: 4.8,
-    downloads: "500+",
+    downloads: "100+",
     type: "eBook",
     icon: FileText,
+    buyUrl: "https://example.com/buy/web-scraping-masterclass", // Placeholder URL
   },
   {
     title: "SQL Optimization Cheatsheet",
-    description: "Performance tips and query optimization techniques for PostgreSQL and MySQL databases.",
+    description: "Performance tips and query optimization techniques for PostgreSQL, Supabase, MongoDB and MySQL databases.",
     price: "Free",
     rating: 5.0,
-    downloads: "2.5k+",
+    downloads: "1.2k+",
     type: "Cheatsheet",
     icon: FileText,
+    downloadUrl: "https://example.com/download/sql-cheatsheet.pdf", // Placeholder URL
   },
   {
     title: "Data Pipeline Architecture Guide",
-    description: "Learn to design scalable data architectures for small to enterprise-level applications.",
-    price: "$49",
+    description: "Learn to design scalable data architectures for small to enterprise level applications.",
+    price: "$39",
     rating: 4.9,
-    downloads: "300+",
+    downloads: "100+",
     type: "eBook",
     icon: FileText,
+    buyUrl: "https://example.com/buy/data-pipeline-guide", // Placeholder URL
   },
 ];
 
@@ -65,7 +69,7 @@ export const DigitalProductsSection = () => {
             Digital <span className="gradient-text">Products</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Curated resources to help you level up your data engineering and automation skills.
+            Curated resources to help you level up your research, data engineering and automation skills.
           </p>
         </motion.div>
 
@@ -112,12 +116,22 @@ export const DigitalProductsSection = () => {
                       </span>
                     </div>
 
-                    <Button
-                      size="sm"
-                      className={product.price === "Free" ? "bg-primary text-primary-foreground" : "bg-secondary text-foreground"}
-                    >
-                      {product.price === "Free" ? "Download Free" : "Get Now"}
-                    </Button>
+                    {product.price === "Free" ? (
+                      <Button asChild size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                        <a href={product.downloadUrl} download>
+                          <Download className="w-4 h-4 mr-2" />
+                          Download Free
+                        </a>
+                      </Button>
+                    ) : (
+                      <Button
+                        size="sm"
+                        className="bg-secondary text-foreground hover:bg-secondary/80"
+                        onClick={() => window.open(product.buyUrl, '_blank')}
+                      >
+                        Get Now
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>
