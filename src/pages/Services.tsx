@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { ArrowLeft, ArrowRight, Database, Code2, BarChart3, Users, Zap, Shield, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, Database, Code2, BarChart3, Users, Zap, Shield, CheckCircle2, BarChart, Cloud } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { PageTransition } from "@/components/PageTransition";
@@ -33,19 +33,45 @@ const services = [
     ],
     color: "from-emerald-500/20 to-teal-500/20",
   },
-    {
-    icon: Database,
-    title: "ETL Pipeline Development",
-    description: "Design and implement robust Extract, Transform, Load pipelines that handle millions of records efficiently with comprehensive error handling and monitoring.",
-    features: [
-      "Custom data extraction from various sources",
-      "Data transformation and cleansing",
-      "Automated scheduling and monitoring",
-      "Error handling and recovery",
-      "Performance optimization",
-    ],
-    color: "from-cyan-500/20 to-blue-500/20",
-  },
+{
+  icon: Code2, // You can import a suitable icon from lucide-react, e.g., Code or Monitor
+  title: "Software & Web Development",
+  description: "Custom software, web apps, and dashboards to enhance operational efficiency and deliver scalable solutions.",
+  features: [
+    "Full-Stack Web Development – React, Node.js, Next.js, or ASP.NET Core",
+    "Custom Dashboard & Reporting Tools – Power BI, Metabase, AppSheet",
+    "Backend API Development & Integration – REST APIs and database connections",
+    "Custom Software Features & Testing – Reliable, maintainable, and scalable solutions",
+    "UI/UX enhancements and responsive design"
+  ],
+  color: "from-purple-500/20 to-pink-500/20", // Adjust gradient colors as you like
+},
+{
+  icon: Cloud, // Choose a cloud-related icon from lucide-react
+  title: "Cloud Solutions",
+  description: "Leverage cloud platforms for scalable backend support, storage, and automation solutions.",
+  features: [
+    "AWS, Azure, GCP setup and management",
+    "Cloud storage and data backup solutions",
+    "Serverless architecture and deployment",
+    "Automated cloud workflows and monitoring",
+    "Scalable and secure infrastructure design"
+  ],
+  color: "from-blue-500/20 to-cyan-500/20",
+},
+{
+  icon: BarChart, // Use BarChart or PieChart icon
+  title: "Data Analysis & Reporting",
+  description: "Transform raw data into actionable insights using advanced analytics and visualization tools.",
+  features: [
+    "KPI tracking and performance dashboards",
+    "Exploratory data analysis and trend identification",
+    "Statistical analysis and predictive modeling",
+    "Custom visualizations using Power BI, Metabase, or Excel",
+    "Automated reporting for regular business or research updates"
+  ],
+  color: "from-green-500/20 to-teal-500/20",
+},
   {
     icon: Code2,
     title: "Web Scraping Solutions",
@@ -59,61 +85,35 @@ const services = [
     ],
     color: "from-emerald-500/20 to-teal-500/20",
   },
-    {
-    icon: Database,
-    title: "ETL Pipeline Development",
-    description: "Design and implement robust Extract, Transform, Load pipelines that handle millions of records efficiently with comprehensive error handling and monitoring.",
-    features: [
-      "Custom data extraction from various sources",
-      "Data transformation and cleansing",
-      "Automated scheduling and monitoring",
-      "Error handling and recovery",
-      "Performance optimization",
-    ],
-    color: "from-cyan-500/20 to-blue-500/20",
-  },
-  {
-    icon: Code2,
-    title: "Web Scraping Solutions",
-    description: "Build ethical, scalable web scraping solutions that extract structured data from websites while respecting robots.txt and rate limits.",
-    features: [
-      "Dynamic content handling",
-      "Anti-detection measures",
-      "Data validation and cleaning",
-      "Multi-format export (CSV, JSON, XLSX)",
-      "API integration capabilities",
-    ],
-    color: "from-emerald-500/20 to-teal-500/20",
-  },
-    {
-    icon: Database,
-    title: "ETL Pipeline Development",
-    description: "Design and implement robust Extract, Transform, Load pipelines that handle millions of records efficiently with comprehensive error handling and monitoring.",
-    features: [
-      "Custom data extraction from various sources",
-      "Data transformation and cleansing",
-      "Automated scheduling and monitoring",
-      "Error handling and recovery",
-      "Performance optimization",
-    ],
-    color: "from-cyan-500/20 to-blue-500/20",
-  },
-  {
-    icon: Code2,
-    title: "Web Scraping Solutions",
-    description: "Build ethical, scalable web scraping solutions that extract structured data from websites while respecting robots.txt and rate limits.",
-    features: [
-      "Dynamic content handling",
-      "Anti-detection measures",
-      "Data validation and cleaning",
-      "Multi-format export (CSV, JSON, XLSX)",
-      "API integration capabilities",
-    ],
-    color: "from-emerald-500/20 to-teal-500/20",
-  },
+{
+  icon: Database, // Use Database icon
+  title: "Database Design & Management",
+  description: "Design, optimize, and maintain databases to ensure data integrity, scalability, and performance.",
+  features: [
+    "Relational (PostgreSQL, MySQL, MSSQL) and NoSQL (MongoDB) design",
+    "Schema design and normalization",
+    "Indexing, query optimization, and performance tuning",
+    "Backup, replication, and recovery strategies",
+    "Ongoing monitoring and database health checks"
+  ],
+  color: "from-cyan-500/20 to-blue-500/20",
+},
+{
+  icon: Zap, // Use a suitable icon from lucide-react, e.g., Zap or Settings
+  title: "Business Process Automation",
+  description: "Streamline repetitive tasks and business processes to improve efficiency, reduce errors, and save time.",
+  features: [
+    "Workflow Automation & Task Scheduling",
+    "Report Generation & Data Synchronization",
+    "Email Campaign Automation",
+    "Integration with APIs, SaaS tools, and internal systems",
+    "Custom automation solutions for business operations"
+  ],
+  color: "from-yellow-500/20 to-orange-500/20", // Adjust gradient colors as desired
+},
   {
     icon: BarChart3,
-    title: "Lead Generation",
+    title: "Lead Generation & CRM Automation",
     description: "Create automated lead generation pipelines that capture, validate, and enrich prospect data for your sales and marketing teams.",
     features: [
       "Intent data discovery",
