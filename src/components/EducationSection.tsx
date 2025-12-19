@@ -8,17 +8,17 @@ const education = [
     degree: "Master in Computer Application",
     institution: "IGNOU",
     location: "Kathmandu, Nepal",
-    period: "2025 - Present",
+    period: "2026 - Present",
     description: "Focused on software development, database management, and information systems.",
-    achievements: ["Dean's List", "Best Project Award", ],
+    achievements: ["Currently enrolled"],
   },
     {
     degree: "Bachelor in Computer Application",
     institution: "Aims Academy | Tribhuvan University",
     location: "Lalitpur, Nepal",
     period: "2018 - 2014",
-    description: "Focused on software development, database management, and information systems.",
-    achievements: ["Dean's List", "Best Project Award", "Technical Club President"],
+    description: "Driven by code, data, and problem solving and information systems.",
+    achievements: ["Best Project Award", "Technical Club President"],
   },
   {
     degree: "Higher Secondary Education",
@@ -31,10 +31,10 @@ const education = [
 ];
 
 const certifications = [
-  { name: "AWS Certified Cloud Practitioner", issuer: "Amazon Web Services", year: "2023" },
-  { name: "Python for Data Science", issuer: "DataCamp", year: "2022" },
-  { name: "Advanced SQL", issuer: "LinkedIn Learning", year: "2022" },
-  { name: "Web Scraping with Python", issuer: "Udemy", year: "2021" },
+  { name: "Hikvision Partnership Program", issuer: "Hikvision", year: "2023" },
+  { name: "UNiview Partnership Program", issuer: "Uniview", year: "2023" },
+  { name: "Advanced SQL", issuer: "LinkedIn Learning", year: "2023" },
+  { name: "IMS Software Pvt.Ltd", issuer: "IMS", year: "2022" },
 ];
 
 export const EducationSection = () => {

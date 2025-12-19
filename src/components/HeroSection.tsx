@@ -62,7 +62,7 @@ export const HeroSection = () => {
               transition={{ delay: 0.4 }}
               className="text-xl sm:text-2xl text-muted-foreground mb-4 font-light"
             >
-              Data Team Lead & Technical Expert
+              Data Team Lead & Technical Expert 🗃️
             </motion.p>
 
             <motion.p
@@ -71,7 +71,7 @@ export const HeroSection = () => {
               transition={{ delay: 0.5 }}
               className="text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Specialized in ETL pipelines, web scraping, automation, Database Management, and leading teams to deliver actionable data insights.
+              Specialized in ETL pipelines, web scraping, Web development, Software Development, automation, Database Management, and leading teams to deliver actionable data insights.
             </motion.p>
 
             <motion.div

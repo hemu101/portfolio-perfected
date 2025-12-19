@@ -3,17 +3,18 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const clients = [
-  { name: "DataFlow", logo: "DF" },
-  { name: "TechVentures", logo: "TV" },
-  { name: "Analytics Pro", logo: "AP" },
-  { name: "CloudScale", logo: "CS" },
-  { name: "DataMesh", logo: "DM" },
-  { name: "InsightHub", logo: "IH" },
+  { name: "IMS Software", logo: "IMS" },
+  { name: "TechnoVision", logo: "TVT" },
+  { name: " Veel", logo: "Veel" },
+  { name: "AppBox", logo: "AB" },
+  { name: "Hikvision", logo: "HV" },
+  { name: "Uniview", logo: "UV" },
+  { name: "Himalayan Java", logo: "HJ" },
 ];
 
 const stats = [
   { value: "50+", label: "Projects Completed" },
-  { value: "30+", label: "Happy Clients" },
+  { value: "10+", label: "Happy Clients" },
   { value: "5+", label: "Years Experience" },
   { value: "99%", label: "Client Satisfaction" },
 ];

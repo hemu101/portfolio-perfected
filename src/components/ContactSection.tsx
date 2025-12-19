@@ -73,7 +73,7 @@ export const ContactSection = () => {
         description: "Thank you for reaching out. I'll get back to you soon!",
       });
       setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error sending message:", error);
       toast({
         title: "Error",
@@ -126,7 +126,7 @@ export const ContactSection = () => {
                   <h3 className="font-heading text-xl font-bold text-foreground">
                     Khem Raj Ale Magar
                   </h3>
-                  <p className="text-muted-foreground text-sm">Data Team Lead</p>
+                  <p className="text-muted-foreground text-sm">Data Operations & Insights</p>
                 </div>
               </div>
 
@@ -197,7 +197,7 @@ export const ContactSection = () => {
                       Your Name
                     </label>
                     <Input
-                      placeholder="John Doe"
+                      placeholder="Full Name"
                       value={formData.name}
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
@@ -213,7 +213,7 @@ export const ContactSection = () => {
                     </label>
                     <Input
                       type="email"
-                      placeholder="john@example.com"
+                      placeholder="email@example.com"
                       value={formData.email}
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })

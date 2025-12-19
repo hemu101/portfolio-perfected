@@ -40,7 +40,7 @@ export const Footer = () => {
               Khem Raj Ale
             </Link>
             <p className="text-muted-foreground text-sm mt-4 leading-relaxed">
-              Data Team Lead specializing in ETL pipelines, web scraping, automation, and leading high-performance data teams.
+            📊 ⚙️ 🧩 Transforming complex data into reliable, actionable insights through scalable pipelines and leadership 📊 ⚙️
             </p>
             <div className="flex gap-4 mt-6">
               {socials.map((social) => (
@@ -144,8 +144,8 @@ export const Footer = () => {
             viewport={{ once: true }}
             className="flex items-center gap-2 text-muted-foreground text-sm"
           >
-            <span>© 2023 Khem Raj Ale Magar</span>
-            <Heart className="w-4 h-4 text-red-500 fill-red-500" />
+            <span>© 2023 Khem ⚡Raj 🛠️Ale Magar📈</span>
+            {/* <Heart className="w-4 h-4 text-red-500 fill-red-500" /> */}
           </motion.div>
 
           <motion.button

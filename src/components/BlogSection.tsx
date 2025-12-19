@@ -3,9 +3,9 @@ import { useRef } from "react";
 import { ArrowRight, Clock, Calendar, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import profileImage5 from "@/assets/profile-5.jpg";
-import profileImage6 from "@/assets/profile-6.jpg";
-import profileImage7 from "@/assets/profile-7.jpg";
+import profileImage5 from "@/assets/a3.jpg";
+import profileImage6 from "@/assets/a2.jpg";
+import profileImage7 from "@/assets/a4.jpg";
 
 const blogPosts = [
   {

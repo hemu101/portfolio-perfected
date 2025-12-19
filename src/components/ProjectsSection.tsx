@@ -19,44 +19,44 @@ const projects = [
     color: "from-cyan-500/20 to-blue-500/20",
   },
     {
-    title: "DAAS – Web Data Scraper",
+    title: "IG – Web Data Scraper",
     description:
-      "Developed a web scraping tool that identifies data patterns, scans HTML structures, and detects repeated elements. Features automatic pagination handling and exports to CSV/XLSX.",
+      "Developed a Instagram Data Scraper: system to scrape Instagram content, detect patterns, and handle pagination automatically, producing clean CSV/XLSX datasets.",
     icon: Database,
     tags: ["Python", "Web Scraping", "ETL", "Automation"],
     highlights: [
-      "CSS selectors for precise extraction",
-      "Rate-limiting avoidance",
-      "Multi-format export support",
+      "Precise data extraction using targeted selectors",
+      "Data analysis for pattern detection",
+     "Seamless integration with various data pipelines",
     ],
-    color: "from-cyan-500/20 to-blue-500/20",
+    color: "from-cyan-500/20 to-green-500/20",
   },
-    {
-    title: "DAAS – Web Data Scraper",
-    description:
-      "Developed a web scraping tool that identifies data patterns, scans HTML structures, and detects repeated elements. Features automatic pagination handling and exports to CSV/XLSX.",
-    icon: Database,
-    tags: ["Python", "Web Scraping", "ETL", "Automation"],
-    highlights: [
-      "CSS selectors for precise extraction",
-      "Rate-limiting avoidance",
-      "Multi-format export support",
-    ],
-    color: "from-cyan-500/20 to-blue-500/20",
+{
+  title: "TikTok – Data Scraper",
+  description:
+    "Developed a system to extract, analyze, and structure TikTok content, identify engagement trends, and handle automatic pagination, producing clean CSV/XLSX datasets for analytics and decision-making.",
+  icon: Database,
+  tags: ["Python", "Web Scraping", "ETL", "Automation", "Data Analysis"],
+  highlights: [
+    "Efficient data extraction from TikTok profiles",
+    "Analysis for content engagement metrics",
+    "Multi-format dataset export for analytics",
+  ],
+  color: "from-pink-500/20 to-red-500/20",
   },
-    {
-    title: "DAAS – Web Data Scraper",
-    description:
-      "Developed a web scraping tool that identifies data patterns, scans HTML structures, and detects repeated elements. Features automatic pagination handling and exports to CSV/XLSX.",
-    icon: Database,
-    tags: ["Python", "Web Scraping", "ETL", "Automation"],
-    highlights: [
-      "CSS selectors for precise extraction",
-      "Rate-limiting avoidance",
-      "Multi-format export support",
-    ],
-    color: "from-cyan-500/20 to-blue-500/20",
-  },
+{
+  title: "ToolHub – AI Multi-Tool Converter",
+  description:
+    "Developed ToolHub, an AI-powered platform that allows users to convert and process multiple file types (images, CSV, PDF, etc.) seamlessly. Features automated workflow management and user-driven conversion options.",
+  icon: Database,
+  tags: ["AI", "Automation", "File Conversion"],
+  highlights: [
+    "Automated conversion of images, CSV, PDF, and other formats",
+    "AI-assisted workflow for user-driven processing",
+    "Batch processing and multi-format export support",
+  ],
+  color: "from-purple-500/20 to-pink-500/20",
+},
   {
     title: "Web HMS – Hospitality Management",
     description:

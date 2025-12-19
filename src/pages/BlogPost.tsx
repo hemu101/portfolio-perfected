@@ -5,10 +5,10 @@ import { ArrowLeft, Clock, Calendar, User, Share2, Linkedin, Twitter } from "luc
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { PageTransition } from "@/components/PageTransition";
-import profileImage5 from "@/assets/profile-5.jpg";
-import profileImage6 from "@/assets/profile-6.jpg";
-import profileImage7 from "@/assets/profile-7.jpg";
-import profileImage8 from "@/assets/profile-8.jpg";
+import profileImage5 from "@/assets/a1.jpg";
+import profileImage6 from "@/assets/a2.jpg";
+import profileImage7 from "@/assets/a5.jpg";
+import profileImage8 from "@/assets/a4.jpg";
 
 const blogPosts: Record<string, {
   title: string;

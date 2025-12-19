@@ -5,9 +5,9 @@ import { Briefcase, GraduationCap, Code2, Users } from "lucide-react";
 import profileImage2 from "@/assets/profile-2.jpg";
 
 const stats = [
-  { label: "Years Experience", value: "3+", icon: Briefcase },
+  { label: "Years Experience", value: "4+", icon: Briefcase },
   { label: "Projects Completed", value: "15+", icon: Code2 },
-  { label: "Teams Led", value: "5+", icon: Users },
+  { label: "Teams Led", value: "3+", icon: Users },
   { label: "Certifications", value: "BCA", icon: GraduationCap },
 ];
 
@@ -62,7 +62,7 @@ export const AboutSection = () => {
             </span>
             
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-              Transforming Data Into
+              Transforming Data Into 🤖
               <span className="gradient-text"> Actionable Insights</span>
             </h2>
 
@@ -72,7 +72,7 @@ export const AboutSection = () => {
             </p>
 
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              I champion data driven methodologies by establishing research frameworks, implementing data quality processes, and fostering a culture where quantitative insights guide product development and operational excellencebridging technical execution with business strategy to deliver solutions that advance organizational data maturity.
+              🧠I champion data driven methodologies by establishing research frameworks, implementing data quality processes, and fostering a culture where quantitative insights guide product development and operational excellencebridging technical execution with business strategy to deliver solutions that advance organizational data maturity.
               With a strong foundation in Database Management, technical support and software implementation, I bridge the gap between complex data systems and business outcomes. I'm passionate about process optimization, team mentorship, and delivering high quality data solutions.
             </p>
 

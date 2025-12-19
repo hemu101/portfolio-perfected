@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Footer } from "@/components/Footer";
 import { PageTransition } from "@/components/PageTransition";
-import profileImage5 from "@/assets/profile-5.jpg";
-import profileImage6 from "@/assets/profile-6.jpg";
-import profileImage7 from "@/assets/profile-7.jpg";
-import profileImage8 from "@/assets/profile-8.jpg";
+import profileImage5 from "@/assets/a1.jpg";
+import profileImage6 from "@/assets/a3.jpg";
+import profileImage7 from "@/assets/a4.jpg";
+import profileImage8 from "@/assets/a5.jpg";
 
 const categories = ["All", "Data Engineering", "Automation", "Tutorial", "Web Scraping", "Leadership"];
 

@@ -16,39 +16,47 @@ const skillCategories = [
   {
     title: "Data Management & Analytics",
     icon: Database,
-    skills: ["MSSQL", "PostgreSQL", "MongoDB", "ETL Pipelines", "Data Preprocessing", "Metadata Tracking", "KPI Monitoring", "Data Visualization"],
+    skills: ["MSSQL", "PostgreSQL", "MongoDB","Supabase","SQL Optimization",  "Data Warehousing","Data Preprocessing","Data QA", "Metadata Tracking", "KPI Monitoring", "Data Visualization"],
     color: "from-cyan-500 to-blue-500",
   },
   {
     title: "Web & Automation",
     icon: Zap,
-    skills: ["Web Scraping", "Task Automation", "Apps Script", "AppSheet", "Metabase", "API Integration", "Automated Workflows"],
+    skills: ["ETL Pipelines","Web Scraping", "Task Automation", "API Integration", "Automated Workflows"],
     color: "from-emerald-500 to-teal-500",
   },
   {
-    title: "Software & Systems",
+    title: "Infrastructure & Systems",
     icon: Server,
-    skills: ["Microsoft IIS", "AWS", "NAS", "POS Systems", "Surveillance Systems", "System Performance Monitoring"],
+    skills: ["Microsoft IIS", "NAS","Software Implementations", "POS Systems","Backup & Recovery", "Surveillance Systems", "System Performance Monitoring"],
     color: "from-orange-500 to-red-500",
   },
   {
     title: "Development",
     icon: Code2,
-    skills: ["Python", "C#", "JavaScript", "HTML/CSS", "ASP.NET Core", "SQL"],
+    skills: ["Python", "C#", "JavaScript", "HTML/CSS", "ASP.NET Core","Prompt Engineering","React", "Node.js","SQL"],
     color: "from-violet-500 to-purple-500",
   },
   {
     title: "Leadership & Team Management",
     icon: Users,
-    skills: ["Team Leadership", "Mentoring", "Cross-functional Collaboration", "Workflow Optimization", "Strategic Planning"],
+    skills: ["Team Leadership", "Task & Ticket Management", "Mentoring", "Cross-functional Collaboration", "Workflow Optimization", "Strategic Planning","Incident & Escalation Management", "Process Improvement","Project Coordination"],
     color: "from-pink-500 to-rose-500",
   },
   {
     title: "Cloud & Backend",
     icon: Cloud,
-    skills: ["AWS", "Backend Support", "API Integration", "Hotfix Deployment", "Debugging"],
+    skills: ["AWS", "Backend Support & Maintenance", "API Integration", "Hotfix Deployment", "Debugging & Issue Resolution"],
     color: "from-blue-500 to-indigo-500",
   },
+  {
+  title: "Toolkits & Platforms",
+  icon: Cloud,
+  skills: [
+    "AppSheet","Metabase","Apps Script", "Power BI","Google Docs, Sheets", "Low-Code Platforms","CRM Tools", "AI Tools",
+  ],
+  color: "from-blue-500 to-indigo-500",
+}
 ];
 
 const programmingLanguages = [
@@ -56,7 +64,11 @@ const programmingLanguages = [
   { name: "JavaScript", level: 80 },
   { name: "C#", level: 75 },
   { name: "SQL", level: 90 },
+  { name: "NOSQL", level: 50 },
   { name: "HTML/CSS", level: 85 },
+  { name: "React", level: 60 },
+  { name: "ASP.NET Core", level: 55 },
+  { name: "Prompt Engineering", level: 80 },
 ];
 
 export const SkillsSection = () => {
